@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Outfit", serif;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-switch {
+   margin-top: 20px;
+   display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: xx-large;
+}
+
+.container .button-1 {
+    margin-top: 20px;
+    padding: 10px 60px;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: "Outfit", serif;
+    border: solid 3px blueviolet;
+    border-radius: 50px;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.container .button-2 {
+    margin-top: 40px;
+    padding: 10px 60px;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: "Outfit", serif;
+    background-color: blueviolet;
+    border: solid 2px blueviolet;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.container span {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#about {
+    margin-top: -50px;
+    gap: 50px;
+}
+
+.container p {
+    background-image: linear-gradient(to right, blueviolet, rgb(188, 140, 243));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+
+.card p {
+    background-image: none;
+    color: white;
+
+}
+
+
+.spans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+hr {
+    width: 100%;
+    border: 3px solid blueviolet;
+}
+
+.card h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    padding: 40px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+       font-size: 15px;
+    }
+
+    .container span {
+        font-size: 16px;
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    .container p {
+        font-size: larger;
+    }
+    .spans {
+        flex-direction: column;
+    }
+    footer h2 {
+        font-size: 15px;
+    }
+    .container .button-2 {
+        display: flex;
+    }
+}
+
