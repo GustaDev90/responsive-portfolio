@@ -38,6 +38,10 @@ html {
     font-size: xx-large;
 }
 
+.icons-container {
+     margin-top: 30px;
+}
+
 .container .button-1 {
     margin-top: 20px;
     padding: 10px 60px;
